@@ -29,7 +29,7 @@
 
 bool is_X_running() {
     auto dsp = XOpenDisplay(nullptr);
-    
+
     if (dsp) {
         XCloseDisplay(dsp);
         return true;
